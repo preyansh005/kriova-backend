@@ -47,6 +47,11 @@ def find_employee():
             employee_data={}
             employee_data['employee_id'] = employee.employee_id
             employee_data['name'] = employee.name
+            employee_data['mno'] = employee.mno
+            employee_data['email'] = employee.email
+            employee_data['dob'] = employee.dob
+            employee_data['role'] = employee.role
+            employee_data['address'] = f"{employee.street}, {employee.city}, {employee.state}, {employee.country}-{employee.pincode}"
         return jsonify({'employee':employee_data,'msg':'Employee Found'})
     except:
         return jsonify({'msg':'Employee Not Found'})
