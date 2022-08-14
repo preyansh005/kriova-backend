@@ -1,5 +1,6 @@
 from flask import *
 from flask_sqlalchemy import *
+from sqlalchemy.dialects.sqlite import BLOB
 import uuid
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_cors import CORS
@@ -25,6 +26,7 @@ class Employee(db.Model):
     country = db.Column(db.String(50))
     pincode = db.Column(db.String(50))
     password = db.Column(db.String(500), nullable=False)
+    role = db.Column(db.String(50))
 
 @app.route('/employee/registration', methods=['POST'])
 def create_employee():
