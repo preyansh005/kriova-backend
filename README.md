@@ -1,5 +1,3 @@
-# kriova-backend
-
 # Required Configuration
 Create MySQL Database with the name of kriova_assessment
 
