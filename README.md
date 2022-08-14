@@ -4,6 +4,7 @@
     1. python
     2. from app import db
     3. db.create_all()
+    4. Drop the table from the database use db.drop_all()
 
 # Start Development Server
 run file (python app.py)
