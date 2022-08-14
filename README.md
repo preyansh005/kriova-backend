@@ -9,3 +9,6 @@
 
 # Start Development Server
 run file (python app.py)
+
+# Front-end repo link
+https://github.com/preyansh005/kriova-frontend
